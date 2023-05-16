@@ -10,7 +10,7 @@ const Header = ({ children }: PropsWithChildren<object>) => {
       justifyContent="center"
       alignItems="center"
       height={350}
-      top={0}
+      top={'auto'}
       zIndex={10}
     >
       {children}

@@ -7,7 +7,7 @@ import { HeaderBarFooter } from "../../Mulecule/HeaderBarFooter/HeaderBarFooter"
 
 export const Header = () => {
     return(
-        <FlexContainer height={"100%"} justifyContent="center">
+        <FlexContainer height={"100%"} flexDirection="column">
             <Image src={headerSrc}/>
             <HeaderBar />
             <HeaderBarFooter />
