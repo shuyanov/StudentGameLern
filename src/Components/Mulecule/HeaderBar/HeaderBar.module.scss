@@ -1,0 +1,27 @@
+.HeaderBar{
+    background-color: #34342ccc;
+    border-radius: 25px;
+
+    width: 1880px;
+    height: 50px;   
+
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    align-items: center;
+
+    a{
+        color: white;
+        text-decoration: none
+    }
+    
+    a:hover{
+        color: orange;
+    }
+}
+
+
+.positinElement{
+    margin-left: 20px;
+    margin-right: 20px;
+}
