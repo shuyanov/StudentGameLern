@@ -11,7 +11,7 @@ type FlexContainerProps = {
   height?: number | string
   justifyContent?: string
   position?: 'absolute' | 'relative' | 'fixed' | 'sticky'
-  top?: number | 0
+  top?: number | 0 | 'auto'
   bottom?: number | 'auto'
   className?: string
   type?: ContainerWidthType
@@ -46,7 +46,7 @@ export const FlexContainer: React.FC<PropsWithChildren<FlexContainerProps>> = ({
         height: height || 'auto' || '100%',
         justifyContent: justifyContent || 'flex-start',
         position: position || 'static',
-        top: top || 0,
+        top: top || 0 || 'auto',
         bottom: bottom || 0,
         zIndex: zIndex || 'auto'
       }}
