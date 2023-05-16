@@ -19,7 +19,8 @@ export const CardUser: React.FC<CardProps> = ({ TemeHeader, ItemArrs }) => {
                 {
                     ItemArrs.map(card => (
                         <ItemUsers Teme={card.Teme} src={card.src} UserName={card.UserName} DataPost={card.DataPost} />
-                    ))}
+                    ))
+                }
             </FlexContainer>
         </FlexContainer>
     )

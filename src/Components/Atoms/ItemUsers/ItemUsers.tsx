@@ -12,17 +12,19 @@ export type ItemUsersProps = {
     DataPost: string,
 }
 
-export const ItemUsers: React.FC<ItemUsersProps> = ({ DataPost, UserName, Teme, src}) => {
+export const ItemUsers: React.FC<ItemUsersProps> = ({ DataPost, UserName, Teme, src }) => {
     return (
         <div style={{ marginBottom: 10 }}>
             <FlexContainer className={styles.ItemTeme} alignItems="center">
                 <div style={{ marginLeft: 30 }}>
                     <FlexContainer alignItems="center" gap={10}>
-                        <div>
+                        <a href="#">
                             <Image src={src} />
-                        </div>
+                        </a>
                         <div>
-                            <h2 style={{marginBottom: 0}}>{Teme}</h2>
+                            <a href="#">
+                                <h2 style={{ marginBottom: 0 }}>{Teme}</h2>
+                            </a>
                             <FlexContainer justifyContent="space-between" alignItems="center">
                                 <h3>{UserName}</h3>
                                 <h3>{DataPost}</h3>

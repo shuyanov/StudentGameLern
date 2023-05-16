@@ -34,6 +34,7 @@ const Footer = ({ children }: PropsWithChildren<object>) => {
       position="sticky"
       alignItems="center"
       justifyContent="center"
+      bottom={"auto"}
     >
       {children}
     </FlexContainer>

@@ -19,7 +19,7 @@ function App() {
       </Layout.Body>
 
       <Layout.Footer>
-        {/* <Footer /> */}
+        <Footer />
       </Layout.Footer>
     </div>
   );
