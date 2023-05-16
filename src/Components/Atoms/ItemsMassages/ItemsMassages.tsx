@@ -3,18 +3,19 @@ import { FlexContainer } from "../../Common";
 import { Image } from "../Image";
 import { DiveLine } from "../DiveLine";
 
-import styles from './ItemTeme.module.scss'
+import styles from './ItemsMassages.module.scss'
 
-export type ItemTemeProps = {
-    Teme: string,
+export type ItemsMassagesProps = {
     src: string,
-    CountTeme: string,
-    CountAnswers: string,
+    Teme: string,
+    CountAnswer: string,
+    UserName: string,
+    Data: string,
     href?: string
 }
 
 
-export const ItemTeme: React.FC<ItemTemeProps> = ({href, Teme, src, CountAnswers, CountTeme }) => {
+export const ItemsMassages: React.FC<ItemsMassagesProps> = ({href, Teme, src, CountAnswer, UserName, Data }) => {
     return (
         <div style={{ marginBottom: 10 }}>
             <FlexContainer className={styles.ItemTeme} justifyContent="space-between" alignItems="center">
@@ -29,9 +30,12 @@ export const ItemTeme: React.FC<ItemTemeProps> = ({href, Teme, src, CountAnswers
                     </FlexContainer>
                 </div>
                 <div style={{ marginRight: 100 }}>
-                    <FlexContainer flexDirection="column" >
-                        <div>{CountTeme} Тем</div>
-                        <div>{CountAnswers} Ответов</div>
+                    <FlexContainer gap={20}>
+                        <div>{CountAnswer} Ответов</div>
+                        <FlexContainer flexDirection="column" gap={10}>
+                            <a href="#">{UserName} </a>
+                            <div>{Data} </div>
+                        </FlexContainer>
                     </FlexContainer>
                 </div>
             </FlexContainer>
