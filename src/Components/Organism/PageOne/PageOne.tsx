@@ -1,6 +1,5 @@
 import React from 'react'
 import { CardProps, CardTeme } from '../../Mulecule/CardTeme/CardTeme'
-
 import { ItemTemeProps } from '../../Atoms/ItemTeme/ItemTeme'
 
 
@@ -10,9 +9,10 @@ import megaphone from '../../../Product/megaphone.png'
 import chatAnswrs from '../../../Product/chatAnswrs.png'
 import { CardUser } from '../../Mulecule/CardUser/CardUser'
 import { ItemUsersProps } from '../../Atoms/ItemUsers/ItemUsers'
-import { FlexContainer } from '../../Common'
 
+import { FlexContainer } from '../../Common'
 import style from './PageOne.module.scss'
+
 
 const CardArray: ItemTemeProps[] = [
     {
@@ -26,6 +26,7 @@ const CardArray: ItemTemeProps[] = [
         src: megaphone,
         CountTeme: '143',
         CountAnswers: '35',
+        href: '/Massage'
     },
     {
         Teme: 'Общение с разработчиками',
@@ -47,6 +48,7 @@ const CardArrayNews: ItemTemeProps[] = [
         src: chatAnswrs,
         CountTeme: '143',
         CountAnswers: '35',
+        href: '/Massage'
     },
 ]
 
@@ -61,7 +63,7 @@ const UserCard: ItemUsersProps[] = [
 
 export const PageOne = () => {
     return (
-        <FlexContainer className={style.PageOne} height={2000} gap={50}>
+        <FlexContainer className={style.PageOne} height={1600} gap={50}>
             <FlexContainer flexDirection='column' gap={50}>
                 <CardTeme TemeHeader={'Важные темы'} ItemArrs={CardArray} />
                 <CardTeme TemeHeader={'Обсуждения'} ItemArrs={CardArrayNews} />

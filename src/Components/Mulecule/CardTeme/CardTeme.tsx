@@ -19,8 +19,8 @@ export const CardTeme: React.FC<CardProps> = ({ TemeHeader, ItemArrs }) => {
             <FlexContainer className={styles.Items} flexDirection="column">
                 {
                     ItemArrs.map(card => (
-                        <ItemTeme Teme={card.Teme} src={card.src} CountTeme={card.CountTeme} CountAnswers={card.CountAnswers} />
-                ))}
+                        <ItemTeme href={card.href} Teme={card.Teme} src={card.src} CountTeme={card.CountTeme} CountAnswers={card.CountAnswers} />
+                    ))}
             </FlexContainer>
         </FlexContainer>
     )
