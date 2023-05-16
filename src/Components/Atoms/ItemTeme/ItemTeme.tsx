@@ -19,8 +19,12 @@ export const ItemTeme: React.FC<ItemTemeProps> = ({ Teme, src, CountAnswers, Cou
             <FlexContainer className={styles.ItemTeme} justifyContent="space-between" alignItems="center">
                 <div style={{ marginLeft: 30 }}>
                     <FlexContainer alignItems="center" gap={15}>
-                        <Image src={src} />
-                        <h1>{Teme}</h1>
+                        <a href="#">
+                            <Image src={src} />
+                        </a>
+                        <a href="#">
+                            <h1>{Teme}</h1>
+                        </a>
                     </FlexContainer>
                 </div>
                 <div style={{ marginRight: 100 }}>
@@ -30,7 +34,7 @@ export const ItemTeme: React.FC<ItemTemeProps> = ({ Teme, src, CountAnswers, Cou
                     </FlexContainer>
                 </div>
             </FlexContainer>
-            <div style={{marginLeft: '5%',marginRight: '10%', }}>
+            <div style={{ marginLeft: '5%', marginRight: '10%', }}>
                 <DiveLine />
             </div>
         </div>

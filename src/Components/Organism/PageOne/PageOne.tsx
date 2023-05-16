@@ -8,6 +8,8 @@ import chatImage from '../../../Product/chat .png'
 import document from '../../../Product/document.png'
 import megaphone from '../../../Product/megaphone.png'
 import chatAnswrs from '../../../Product/chatAnswrs.png'
+import { CardUser } from '../../Mulecule/CardUser/CardUser'
+import { ItemUsersProps } from '../../Atoms/ItemUsers/ItemUsers'
 
 const CardArray: ItemTemeProps[] = [
     {
@@ -45,11 +47,21 @@ const CardArrayNews: ItemTemeProps[] = [
     },
 ]
 
+const UserCard: ItemUsersProps[] = [
+    {
+        Teme: 'Последняя тема',
+        src: chatAnswrs,
+        DataPost: '123',
+        UserName: 'sweet62'
+    },
+]
+
 export const PageOne = () => {
     return (
         <div>
             <CardTeme TemeHeader={'Важные темы'} ItemArrs={CardArray} />
             <CardTeme TemeHeader={'Обсуждения'} ItemArrs={CardArrayNews} />
+            <CardUser TemeHeader={'Последние темы'} ItemArrs={UserCard} />
         </div>
     )
 }
