@@ -15,7 +15,7 @@ const Massage: ItemsMassagesProps[] = [
         UserName: "sweet62",
         Data: '12-341-11',
         CountAnswer: '12',
-        href: '/uiey'
+        href: '/Post'
     },
     {
         src: chatAnswrs,

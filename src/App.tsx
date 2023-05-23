@@ -6,6 +6,7 @@ import { PageOne } from './Components/Organism/PageOne/PageOne';
 import { Footer } from './Components/Cells/Footer';
 import { Route, Routes } from 'react-router-dom';
 import { PageMassage } from './Components/Organism/PageMassage/PageMassage';
+import { PagePost } from './Components/Organism/PagePost/PagePost';
 
 
 
@@ -20,8 +21,10 @@ function App() {
         <Routes>
           <Route path="/"
             element={<PageOne />} />
-            <Route path="/Massage"
+          <Route path="/Massage"
             element={<PageMassage />} />
+          <Route path="/Post"
+            element={<PagePost />} />
         </Routes>
       </Layout.Body>
 
